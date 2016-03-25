@@ -1,6 +1,6 @@
 # USA_AGRI_FOOD_DEPT
 
-This application is designed in angular.
+This application is designed in angularJS.
 In this application
     --user can search the food items and view the details.
     --user can add food item to his/her favourites.
