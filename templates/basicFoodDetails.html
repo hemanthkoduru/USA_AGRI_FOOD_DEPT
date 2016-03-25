@@ -11,7 +11,7 @@
   <th ng-repeat="measure in foodDetails.nutrients[0].measures | filter:search:strict">
   <input type="number" min="1" ng-model="model" ng-init="model=1" class="measure-input"/>
     <div><span>{{measure.label}}</span></div>
-    <div><span>{{model_$index * measure.eqv}} g</span></div>
+    <div><span>{{model * measure.eqv}} g</span></div>
   </th>
   </tr>
   
