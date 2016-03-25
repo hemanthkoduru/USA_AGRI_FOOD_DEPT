@@ -19,7 +19,7 @@ Libraries in the application
     Used the angular storage(ng-storage). We can store the data in local storage using ng-storage and 
     also we don't need to serialize or unserialize data.
 
-    Used the bootstrap UI which gives the ability to create responsive.
+    Used the bootstrap UI which gives the ability to create responsive pages.
 
 
 
