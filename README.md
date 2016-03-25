@@ -16,7 +16,8 @@ Libraries in the application
     
     Used the angular route minfied version
 
-    Used the angular storage(ng-storage). We can store the data in local storage using ng-storage and also we don't need to serialize or unserialize data.
+    Used the angular storage(ng-storage). We can store the data in local storage using ng-storage and 
+    also we don't need to serialize or unserialize data.
 
     Used the bootstrap UI which gives the ability to create responsive.
 
