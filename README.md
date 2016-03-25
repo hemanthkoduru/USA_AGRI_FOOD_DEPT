@@ -24,3 +24,15 @@ Libraries in the application
 
 
 Run index.html in local server to view the Application.
+
+
+NOTE:
+
+    Service is failing sometimes and giving the error:“No 'Access-Control-Allow-Origin'
+    header is present on the requested resource”. Service side issue.
+    
+    In search if we are giving space in the text, service is failing(service side issue).
+    
+    
+
+        
