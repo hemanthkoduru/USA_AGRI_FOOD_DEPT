@@ -28,10 +28,12 @@ Run index.html in local server to view the Application.
 
 NOTE:
 
+    Minimum 4 letters are required for search.
+
     Service is failing sometimes and giving the error:“No 'Access-Control-Allow-Origin'
     header is present on the requested resource”. Service side issue.
     
-    In search if we are giving space in the text, service is failing(service side issue).
+    In search if we are giving space in the text, service is failing(service side issue).Tested service url in browser and in      browser also service is failing.
     
     
 
