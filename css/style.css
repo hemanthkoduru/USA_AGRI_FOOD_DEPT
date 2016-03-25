@@ -1,0 +1,98 @@
+#site-header {
+    background-color: #112940;
+}
+
+.logo {
+    background: url("../img/USDA-Logo.jpg");
+    display: block;
+    height: 70px;
+    width: 8%;
+    background-size: 100% 100%;
+    float: left;
+}
+
+.panel {
+    background-color: #112940;
+    text-align: center;
+    color: #fff;
+    margin-top: 1%;
+    border: none;
+}
+
+.navbar-menubuilder {
+    clear: both;
+    margin-left: 80px
+}
+
+.navbar-menubuilder a {
+    color: #fff;
+}
+
+.food-search {
+    width: 50%;
+}
+
+.home-container {
+    margin-left: -15px;
+}
+
+.measure-input {
+    text-align: right;
+    width: 50px;
+}
+
+.favourite-button {
+    float: right;
+}
+
+.page-heading {
+    margin-bottom: 2% !important;
+}
+
+.nav-pills > li > a {
+    border-radius: 0;
+}
+
+.nav > li > a:focus, .nav > li > a:hover {
+    text-decoration: none;
+    background-color: #337AB7;
+    color: #fff;
+}
+
+.glyphicon-star {
+    float: right;
+}
+
+#searchObjResults {
+    margin-top: 4%;
+}
+
+/** Start ::: Table CSS**/
+.table {
+    border: #ccc 1px solid;
+    font-size: 14px;
+}
+
+.table .table-head {
+    background: #112940;
+    color: white;
+    padding: 12px;
+}
+
+.table-row .table-data {
+    padding: 12px;
+    border-right: 1px solid #e5e5e5;
+
+}
+
+.close-btn-container {
+    width: 10px;
+
+}
+
+.close-btn-container .btn {
+    padding: 2px 3px;
+}
+
+/** End ::: Table CSS**/
+

@@ -1,0 +1,28 @@
+<div class="container" ng-controller='displayFoodDetails'>
+
+  <h2>Basic Report: {{foodDetails.ndbno}}, {{foodDetails.name}}</h2>
+  <span>Nutrient values and weights are for edible portion.</span>
+<table class="table table-striped">
+  <tr class="heading-row">
+  <th>Nutrient</th>
+  <th>Unit</th>
+  <th><input type="number" min="1" ng-model="defaultValue" class="measure-input" ng-init="defaultValue=1"/>
+    <div><span>Value per {{defaultValue * 100}} g</span></div> </th>
+  <th ng-repeat="measure in foodDetails.nutrients[0].measures | filter:search:strict">
+  <input type="number" min="1" ng-model="model" ng-init="model=1" class="measure-input"/>
+    <div><span>{{measure.label}}</span></div>
+    <div><span>{{model_$index * measure.eqv}} g</span></div>
+  </th>
+  </tr>
+  
+  <tr ng-repeat="nutrient in foodDetails.nutrients" >
+    <td>{{nutrient.name}} </td>
+    <td>{{nutrient.unit}} </td>
+    <td>{{defaultValue * nutrient.value}} </td>
+    <td ng-repeat="measure in nutrient.measures | filter:search:strict">
+       {{measure.value}}
+    </td>
+  </tr>
+  
+</table>
+  </div>

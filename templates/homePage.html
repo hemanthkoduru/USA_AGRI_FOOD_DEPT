@@ -1,0 +1,36 @@
+<div class="container home-container" ng-controller='searchFood' xmlns="http://www.w3.org/1999/html">
+
+  <div class="icon-addon addon-lg">
+
+
+    <div class="input-group">
+      <input type="text" class="form-control" ng-model="searchValue" placeholder="Enter food name or id to serach" ng-keyup="searchFood($event)">
+
+      <div class="input-group-btn">
+        <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-search"></span></button>
+      </div>
+    </div>
+
+  </div>
+
+  <div ng-show="noResults">
+    <span><h3>No items found</h3></span>
+  </div>
+
+ 	<table id="searchObjResults" class="table table-striped table-bordered table-condensed">
+      <tr ng-show="isResults">
+      <th>Name</th>
+      <th>NDB No.</th>
+      </tr>
+      <tr ng-repeat="food in foodSearch | filter:search:strict"  ng-show="isResults">
+        <td><a href="#" ng-click="openBasicDetails(food.ndbno)" data="{{food.ndbno}}" >{{food.name}}</a>
+
+            <span ng-if="food.favourite==true" class="glyphicon glyphicon-star"></span>
+            <button ng-show="!food.favourite" type="submit" class="btn btn-success favourite-button" ng-click="addFoodFavourite(food,$index,$event);" ng-show="favButton_{{$index}}=true"><span class="glyphicon glyphicon-plus">AddFavourite</span></button>
+
+         </td>
+        <td><a href="#" ng-click="openBasicDetails(food.ndbno)" data="{{food.ndbno}}" >{{food.ndbno}}</a></td>
+      </tr>
+
+</table>
+        </div>

@@ -1,0 +1,19 @@
+<div id="favouriteFoodContent">
+
+<table class="table table-hover">
+
+    <tr>
+        <th class="table-head">Food Name</th>
+        <th class="table-head">Food Id</th>
+        <th class="table-head">   </th>
+    </tr>
+
+    <tr class="table-row" ng-repeat="food in favouriteFoods">
+        <td class="table-data" ng-click="openBasicDetails(food.ndbno)"><a href="#" >{{food.name}}</a> </td>
+        <td class="table-data" ng-click="openBasicDetails(food.ndbno)"> <a href="#" >{{food.ndbno}}</a> </td>
+        <td class="close-btn-container"><button class="btn" ng-click="removeFavourite(food.ndbno)"><i class="glyphicon glyphicon-remove"></i> </button></td>
+    </tr>
+
+</table>
+
+</div>
